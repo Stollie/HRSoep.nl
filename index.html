@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<title>HRSoep.nl - Welkom!</title>
+	<link rel="stylesheet" href="css/style.css" />
+	<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+	<script src="http://platform.twitter.com/anywhere.js?id=aWTBg8okwm4IfWlEPJsw2w&v=1" type="text/javascript"></script>
+	
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<a href="http://hrsoep.nl"><img src="img/logo.png" alt="HRSoep.nl logo"></a>
+		</header>
+		
+		<div class="block">
+			<div class="left">
+				<h1>#HRSoep van de dag</h1>
+				<script>
+				new TWTR.Widget({
+				  version: 2,
+				  type: 'search',
+				  search: '#hrsoep',
+				  interval: 30000,
+				  title: 'HRSoep.nl',
+				  subject: '',
+				  width: 300,
+				  height: 300,
+				  theme: {
+				    shell: {
+				      background: '#ffffff',
+				      color: '#ffffff'
+				    },
+				    tweets: {
+				      background: '#ffffff',
+				      color: '#444444',
+				      links: '#1985b5'
+				    }
+				  },
+				  features: {
+				    scrollbar: false,
+				    loop: false,
+				    live: true,
+				    behavior: 'default'
+				  }
+				}).render().start();
+				</script>		
+			</div>
+			<div class="right">
+				<h1>Welkom, soepliefhebbers!</h1>
+				<p>Welke soep is er vandaag? Op deze website kunt u de #HRSoep van de dag zien.</p>
+				
+				<h2>Tip de redactie</h2>
+				<div id="twitterBox"></div>
+
+
+				<script type="text/javascript">
+
+				  twttr.anywhere(function (T) {
+
+				    T("#twitterBox").tweetBox({
+				      height: 100,
+				      width: 300,
+					  label: "Tip de soepredactie",
+				      defaultContent: "De #hrsoep is..."
+				    });
+
+				  });
+
+				</script>
+			</div>
+			
+			<div class="clearfix"></div>
+		</div>
+		<footer>HRSoep.nl heeft in geen enkele vorm relatie met hr.nl of hro.nl en is een initiatief van MT studenten. Copyright 2011</footer>
+	</div>
+	
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-27715324-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+</body>
+</html>

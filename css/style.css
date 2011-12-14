@@ -1,0 +1,50 @@
+html, body{
+	/* background-color: #CC0C5A; */
+	background-color: #CC1236;
+	font-family: arial;
+}
+#wrapper{
+	width: 700px;
+	margin: 0 auto;
+}
+.block{
+	background-color: #fff;
+	border: 1px solid white;
+	border-radius: 10px;
+	padding: 10px;
+}
+h1{
+	color: #333;
+	font-size: 14pt;
+}
+h2{
+	color: #999;
+	font-size: 12pt;
+}
+.twtr-ft img{
+	display: none;
+}
+
+.left, .right{
+	float: left;
+	width: 300px;
+}
+.right{
+	margin-left: 20px;
+}
+
+.clearfix{
+	clear: both;
+}
+header{
+	padding: 10px;
+}
+header > img{
+	border: none;
+}
+footer{
+	font-size: 8pt;
+	color: rgba(255,255,255, .5);
+	padding: 10px;
+	text-align: center;
+}
